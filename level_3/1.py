@@ -1,10 +1,12 @@
 import decimal
 
 from constants import ___
+from typing import Mapping, Optional
 
 
-def get_transaction_amount(transaction_id: ___, transactions_amounts_map: ___) -> ___:
+def get_transaction_amount(transaction_id: int, transactions_amounts_map: Mapping[int, decimal.Decimal]) -> Optional[decimal.Decimal]: #1 - айди всегда целое число. --> функция может вернуть либо сумму, либо Ноне 
     # попробуйте использовать typing.Mapping: transactions_amounts_map по смыслу не должен меняться внутри функции
+# Mapping - интерфейс только для чтения (можно только получать значения)
     pass
 
 
